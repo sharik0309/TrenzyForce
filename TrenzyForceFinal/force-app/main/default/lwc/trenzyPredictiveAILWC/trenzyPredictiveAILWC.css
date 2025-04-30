@@ -1,0 +1,16 @@
+.success-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.percentage {
+    font-size: 3rem; /* Extra large */
+    color: green;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1rem; /* Smaller text */
+    color: #555; /* Optional: light gray text */
+    margin-top: 5px;
+}

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Predicted Success">
+        <div class="slds-p-around_medium">
+            <template if:true={predictedSuccess}>
+                <div class="success-container">
+                    <div class="percentage"><h1><strong>{predictedSuccess}% </strong></h1></div><br>
+                    <div class="label"> <p>chance of success</p></div>
+                </div>
+            </template>
+            <template if:false={predictedSuccess}>
+                <p>Loading prediction...</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

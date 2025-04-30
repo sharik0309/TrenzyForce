@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Ad Spends" icon-name="standard:campaign">
+        <template if:true={spends}>
+            <lightning-datatable
+                key-field="Id"
+                data={spends}
+                columns={columns}
+                hide-checkbox-column
+            >
+            </lightning-datatable>
+        </template>
+        <template if:true={spends.error}>
+            <div class="slds-text-color_error">
+                <p>{spends.error}</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>
